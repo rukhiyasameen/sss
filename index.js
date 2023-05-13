@@ -6,8 +6,8 @@ import dotenv from "dotenv";
 import userRoutes from "./routes/users.js";
 import questionRoutes from "./routes/Questions.js";
 import answerRoutes from "./routes/Answers.js";
-//import connectDB from "./connectMongoDb.js";
-// connectDB()
+import connectDB from "./connectMongoDb.js";
+connectDB()
 console.log("hey, that's start script");
 
 const app = express();
