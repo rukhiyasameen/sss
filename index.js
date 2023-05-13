@@ -20,9 +20,9 @@ app.use("/", (req, res) => {
   res.send("This is a stack overflow clone API");
 });
 
-// app.use("/user", userRoutes);
-// app.use("/questions", questionRoutes);
-// app.use("/answer", answerRoutes);
+app.use("/user", userRoutes);
+app.use("/questions", questionRoutes);
+app.use("/answer", answerRoutes);
 
 const PORT = process.env.PORT || 5000;
 
